@@ -1,0 +1,220 @@
+body {
+    background: url('https://wallpapercave.com/wp/wp8813131.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Para que el contenido no se quede atorado */
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+.index {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.menu a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background 0.2s;
+    text-align: center;
+    width: 180px;
+    height: 220px;
+}
+.menu a:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+.menu a img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 240px; 
+    height: 160px;
+    background: linear-gradient(135deg, #ff0000, #808080);
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 240px;
+    height: 160px;
+    object-fit: contain;
+}
+.pokedex-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* 🟠 Sección de Imagen */
+.pokemon-imagen {
+    background: rgba(255, 165, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pokemon-imagen img {
+    width: 200px;
+    height: auto;
+}
+
+/* 🔴 Sección de Descripción */
+.pokemon-seccion {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Descripción con fondo claro */
+.descripcion {
+    background: #ffe5e5;
+    border-left: 5px solid #ff0000;
+}
+
+/* 🔵 Sección de Características */
+.caracteristicas {
+    background: #e5f7ff;
+    border-left: 5px solid #007bff;
+    text-align: left;
+}
+
+.caracteristicas h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.caracteristicas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.caracteristicas li {
+    background: #f8f8f8;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+body {
+    background: url('https://wallpapercave.com/wp/wp8813131.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pokedex-container {
+    display: flex;
+    flex-direction: row; /* Fuerza que los elementos estén en fila */
+    justify-content: space-between; /* Separa las mitades */
+    align-items: flex-start; /* Alinea los elementos arriba */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1000px; /* Ajusta el ancho total */
+}
+
+/* Secciones izquierda y derecha */
+.mitad-a, .mitad-b {
+    flex: 1; /* Ambas mitades ocupan el mismo espacio */
+    min-width: 300px; /* Evita que se encojan demasiado */
+}
+
+/* Asegura que "Cómo funciona" y "Mayores dificultades" estén alineados */
+.info-adicional {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Secciones de cada mitad */
+.pokemon-seccion {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔥 Sección Descripción */
+.descripcion {
+    background: #ffe5e5;
+    border-left: 5px solid #ff0000;
+}
+
+/* 🔵 Sección Características */
+.caracteristicas {
+    background: #e5f7ff;
+    border-left: 5px solid #007bff;
+    text-align: left;
+}
+
+/* 📷 Imagen extra */
+.extra-imagen {
+    background: rgba(255, 165, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.extra-imagen img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ❓ Cómo funciona */
+.como-funciona {
+    background: #fff5cc;
+    border-left: 5px solid #ffcc00;
+}
+
+/* ⚠️ Mayores dificultades */
+.dificultades {
+    background: #ffdede;
+    border-left: 5px solid #ff4d4d;
+}
