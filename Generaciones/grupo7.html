@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+</head>
+<body>
+
+    <div class="pokedex-container">
+        <div class="mitad-a">
+            <div class="pokemon-imagen">
+                <img src="imagenes/Grupo 3.png" alt="Vision completa">
+            </div>
+
+            <div class="pokemon-seccion descripcion">
+                <h1>Vandi - Graaff</h1>
+                <p>
+                    Nuestro proyecto consiste en un generador eléctrico de Van de Graaff, un dispositivo capaz de generar y acumular cargas eléctricas, creando una diferencia de potencial lo suficientemente alta como para observar fenómenos eléctricos a simple vista.
+                </p>
+            </div>
+
+            <div class="pokemon-seccion caracteristicas">
+                <h2>📊 Características</h2>
+                <ul>
+                    <li><strong>Tipo:</strong> ⚡Eléctrico⚡/🦾Acero🦾</li>
+                    <li><strong>Altura:</strong> 0.7 m</li>
+                    <li><strong>Peso:</strong> 6.9 kg</li>
+                    <li><strong>Habilidad:</strong> Inducción</li>
+                    <li><strong>Debilidades:</strong> Tensión de las bandas, eficacia del cableado</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MITAD DERECHA (DENTRO de .pokedex-container) -->
+        <div class="mitad-b">
+            <div class="extra-imagen">
+                <img src="../imagenes/G7.jpg" alt="Imagen adicional">
+            </div>
+
+            <div class="pokemon-seccion como-funciona">
+                <h2> Cómo funciona❓</h2>
+                <p>
+                    El generador funciona mediante un sistema de inducción utilizando cepillos metálicos: uno conectado a la cúpula y otro a un electrodo de descarga. Las cargas se transportan gracias a un sistema motorizado que emplea un multiplicador de velocidad con bandas y poleas. Un motor de 100 RPM hace girar un eje de menor diámetro, conectado a un núcleo que transmite el movimiento a una banda de 40 cm. Esta banda conduce las cargas hacia la cúpula, mientras que el cepillo inferior recoge las cargas opuestas en el electrodo de descarga, permitiendo visualizar la diferencia de potencial entre ambas superficies.
+                </p>
+            </div>
+
+            <div class="pokemon-seccion dificultades">
+                <h2>⚠️ Mayores dificultades⚠️</h2>
+                <p>
+                    Uno de los mayores desafíos del proyecto fue el sistema de recolección de cargas. Al existir múltiples variables que pueden afectar el proceso, fue necesario realizar numerosos intentos, pruebas e hipótesis. Mecánicamente, la tensión de la banda principal representó un reto considerable, ya que debía ser conductora, tener la capacidad de funcionar como polea y asegurar la correcta transmisión del movimiento hacia el eje superior.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="window.history.back()">Volver</button>
+</body>
+</html>
