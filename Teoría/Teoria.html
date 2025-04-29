@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pokédex</title>
-        <link rel="stylesheet" href="CSS/Style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría Taller 2</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <style>
+        .menu a {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, background 0.2s;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            background: #8e9dc5; /* fondo amarillo al pasar el mouse */
+            transform: scale(1.05); /* agrandado suave */
+        }
+
+        .menu img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .titulo-secciones {
+            background: rgba(92, 92, 92, 0.85);
+            padding: 15px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            color: #050031;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <link rel="icon" href="../imagenes/iconlogofavicon.png" type="image/x-icon">
+</head>
 <body>
-        <button onclick="window.history.back()">Volver</button>
-        <div class="logo">
-            <img src="imagenes/LDM.png" alt="Logo">
-        </div>   
+
+    <!-- Logo fijo -->
+    <div class="logo">
+        <img src="../imagenes/LDM.png" alt="Logo">
+    </div>
+
+    <!-- Menú principal -->
+    <div class="index">
+        <h2 class="titulo-secciones">Teoría para mecanizado y diseño</h2>
+        <div class="menu">
+            <a href="../Teoría/manufactura.html">
+                <img src="../imagenes/manufactura.png" alt="Manufactura">
+                <span>Manufactura</span>
+            </a>
+            <a href="#">
+                <img src="../imagenes/engranajesicon.png" alt="Mecanismos de Transmision">
+                <span>Mecanismos de transmisión</span>
+            </a>
+            <a href="#">
+                <img src="../imagenes/fresadora.png" alt="Fresadora">
+                <span>Fresadora</span>
+            </a>
+            <a href="#">
+                <img src="../imagenes/torno.png" alt="Torno">
+                <span>Torno</span>
+            </a>
+            <a href="#">
+                <img src="../imagenes/cnc.png" alt="CNC">
+                <span>CNC</span>
+            </a>
+            <a href="#">
+                <img src="../imagenes/impresion 3d.png" alt="Impresión 3D">
+                <span>Impresión 3D</span>
+            </a>
+        </div>
+    </div>
+
+    <button onclick="window.history.back()">Volver</button>
+
 </body>
+</html>

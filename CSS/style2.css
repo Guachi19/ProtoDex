@@ -1,45 +1,28 @@
 body {
-    background: url('../imagenes/Fondo.png') no-repeat center center fixed;
+    background: url('https://wallpapercave.com/wp/wp8813131.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Para que el contenido no se quede atorado */
     min-height: 100vh;
     width: 100%;
     margin: 0;
-
-    p {
-        text-align: justify;
-        line-height: 1.6;
-      }
-
-    h1, h2 {
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
-
 }
-
-/* 🧱 Contenedor principal */
 .index {
-    background: rgb(241, 241, 241);
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-/* 📋 Menú principal */
 .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 20px;
 }
-
 .menu a {
     position: relative;
     display: flex;
@@ -49,7 +32,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 18px;
-    background: #0000009a;
+    background: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -58,26 +41,22 @@ body {
     width: 180px;
     height: 220px;
 }
-
 .menu a:hover {
-    background: #00000080;
+    background: #ffd700;
     transform: scale(1.05);
 }
-
 .menu a img {
     width: 120px;
     height: 120px;
     margin-bottom: 10px;
 }
-
-/* 🎨 Logo */
 .logo {
     position: fixed;
     top: 20px;
     left: 20px;
     width: 240px; 
     height: 160px;
-    background: linear-gradient(135deg, #ffffff, #777777);
+    background: linear-gradient(135deg, #ff0000, #808080);
     border-radius: 15px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -91,42 +70,22 @@ body {
     height: 160px;
     object-fit: contain;
 }
-
-/* 🧩 Contenedor principal Pokédex */
 .pokedex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    background: rgba(100, 100, 100, 0.795);
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 90%;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 500px;
 }
 
-/* 🧱 Mitades */
-.mitad-a, .mitad-b {
-    flex: 1;
-    min-width: 300px;
-}
-
-/* 📚 Info adicional */
-.info-adicional {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-}
-
-/* 🔶 Imagen Pokémon */
+/* 🟠 Sección de Imagen */
 .pokemon-imagen {
-    background: #e5e7ff;
+    background: rgba(255, 165, 0, 0.1);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
-    text-align: center;
 }
 
 .pokemon-imagen img {
@@ -134,7 +93,7 @@ body {
     height: auto;
 }
 
-/* 🔴 Descripción */
+/* 🔴 Sección de Descripción */
 .pokemon-seccion {
     padding: 15px;
     margin-bottom: 15px;
@@ -142,21 +101,22 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Descripción con fondo claro */
 .descripcion {
     background: #ffe5e5;
-    border-left: 5px solid #000000;
+    border-left: 5px solid #ff0000;
 }
 
-/* 🔵 Características */
+/* 🔵 Sección de Características */
 .caracteristicas {
-    background: #e5e7ff;
-    border-left: 5px solid #002246;
+    background: #e5f7ff;
+    border-left: 5px solid #007bff;
     text-align: left;
 }
 
 .caracteristicas h2 {
     text-align: center;
-    color: #001e3f;
+    color: #007bff;
     margin-bottom: 10px;
 }
 
@@ -172,8 +132,66 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+body {
+    background: url('https://wallpapercave.com/wp/wp8813131.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
-/* 📷 Imagen adicional */
+.pokedex-container {
+    display: flex;
+    flex-direction: row; /* Fuerza que los elementos estén en fila */
+    justify-content: space-between; /* Separa las mitades */
+    align-items: flex-start; /* Alinea los elementos arriba */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1000px; /* Ajusta el ancho total */
+}
+
+/* Secciones izquierda y derecha */
+.mitad-a, .mitad-b {
+    flex: 1; /* Ambas mitades ocupan el mismo espacio */
+    min-width: 300px; /* Evita que se encojan demasiado */
+}
+
+/* Asegura que "Cómo funciona" y "Mayores dificultades" estén alineados */
+.info-adicional {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Secciones de cada mitad */
+.pokemon-seccion {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔥 Sección Descripción */
+.descripcion {
+    background: #ffe5e5;
+    border-left: 5px solid #ff0000;
+}
+
+/* 🔵 Sección Características */
+.caracteristicas {
+    background: #e5f7ff;
+    border-left: 5px solid #007bff;
+    text-align: left;
+}
+
+/* 📷 Imagen extra */
 .extra-imagen {
     background: rgba(255, 165, 0, 0.1);
     padding: 15px;
@@ -191,31 +209,12 @@ body {
 
 /* ❓ Cómo funciona */
 .como-funciona {
-    background: #e5e7ff;
-    border-left: 5px solid #000000;
+    background: #fff5cc;
+    border-left: 5px solid #ffcc00;
 }
 
-/* ⚠️ Dificultades */
+/* ⚠️ Mayores dificultades */
 .dificultades {
-    background: #e5e7ff;
-    border-left: 5px solid #000000;
-}
-.titulo-secciones {
-    background: rgba(92, 87, 129, 0.85);
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000;
-}
-.pokemon-imagen img,
-.extra-imagen img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-  width: min(400px, 80%);
+    background: #ffdede;
+    border-left: 5px solid #ff4d4d;
 }
